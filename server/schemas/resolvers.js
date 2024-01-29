@@ -22,9 +22,9 @@ const resolvers = {
     } 
   }
 
-  resolvers: {
+  // resolvers: {
     
-  }
+  // }
 };
 
 module.exports = resolvers;
