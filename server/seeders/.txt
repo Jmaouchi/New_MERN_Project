@@ -1,0 +1,1 @@
+Here we do have some manualy added data, please cd to server and run npm run seed to send it to the local database 

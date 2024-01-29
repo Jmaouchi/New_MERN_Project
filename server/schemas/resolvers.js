@@ -19,7 +19,13 @@ const resolvers = {
     thoughts: async () => {
       // Find all Thoughts and sort them by date ( newest to oldest )
       return Thought.find().sort({createdAt: -1});
-    } 
+    },
+
+    oneThought: async (parent, {_id}) => {
+      return Thought.findOne({_id})
+      .select('-__v ')
+      .populate('user')
+    }
   }
 
   // resolvers: {

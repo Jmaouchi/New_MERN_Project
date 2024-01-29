@@ -17,7 +17,7 @@ const typeDefs = gql`
     _id: ID,
     thoughtText: String,
     createdAt: String,
-    username: String
+    username: [User]
   }
 
 
@@ -25,7 +25,7 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     thoughts: [Thought]
-    oneThought(username: String): [Thought]
+    oneThought(_id: ID!): [Thought]
   }
 `
 
