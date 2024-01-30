@@ -21,10 +21,12 @@ const resolvers = {
         return Thought.findOne({ _id });
       }
     },
+
+    // Mutations to post update and delete data on database 
+    mutation: {
+    
+    }
   }
 
-  // resolvers: {
-    
-  // }
 
 module.exports = resolvers;
